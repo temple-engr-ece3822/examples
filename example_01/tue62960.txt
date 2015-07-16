@@ -1,3 +1,1 @@
-Updated: Your magic number is 27 of course.
-
-
+Your magic number is 710, of course.
