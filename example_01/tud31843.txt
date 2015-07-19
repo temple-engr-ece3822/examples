@@ -1,2 +1,3 @@
-Your magic number is 000033.
+My magic number is actually 27.
+
 
