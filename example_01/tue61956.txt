@@ -1,2 +1,2 @@
-Your magic number is 000012.
+Your magic number is actually 000012.
 
