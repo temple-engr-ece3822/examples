@@ -1,2 +1,1 @@
-Your magic number is 000023.
-
+Your magic number is 710, of course.

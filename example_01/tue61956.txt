@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 Your magic number is actually 000012.
+=======
+Updated: Your magic number is 27 of course.
+
+>>>>>>> 5c2a23a28315fc298c493e2e0606b0f86a2982cd
 
