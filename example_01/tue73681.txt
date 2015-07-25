@@ -1,2 +1,2 @@
-Updated Magic number is now 14... 
+ "My magic number is actually 14."
 
