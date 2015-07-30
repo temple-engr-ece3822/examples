@@ -1,2 +1,3 @@
-Your magic number is 000031.
+My magic number is actually 0003 (yes the zeros count).
+
 
