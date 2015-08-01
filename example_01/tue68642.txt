@@ -1,2 +1,3 @@
-Your magic number is 000002.
+The new magic number is .0002
+
 
