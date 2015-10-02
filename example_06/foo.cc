@@ -7,18 +7,42 @@ int main (int argc, char** argv) {
   char* fname = argv[1];
   fprintf(stdout, "fname = [%s]\n", fname);
 
-  FILE* fp = fopen(fname, "r");
-  if (fp == (FILE*)NULL) {
-    fprintf(stdout, "error opening [%s]\n", fname);
-    exit(-1);
+  long nvalues = atoi(argv[2]);
+  bool is_stdin = false;
+
+  // read from stdin
+  //
+  FILE* fp;
+
+  if (strcmp(fname, "-") == 0) {
+    is_stdin = true;
+    fp = stdin;
+  }
+  else {
+    is_stdin = false;
+    fp = fopen(fname, "r");
   }
 
-  char buf[999];
-  long nbytes = 50;
-  long nbytes_read = fread(buf, sizeof(char), nbytes, fp);
-  buf[nbytes] = (char)NULL;
-  fprintf(stdout, "num_bytes_read = %ld\n", nbytes_read);
-  fprintf(stdout, "value = [%s]\n", buf);
+  //  
+  //  if (fp == (FILE*)NULL) {
+  //    fprintf(stdout, "error opening [%s]\n", fname);
+  //    exit(-1);
+  //  }
 
-  fclose(fp);
+  short int new_buf[nvalues];
+  long nvalues_read = 99;
+
+  while (nvalues_read > 0) {
+    nvalues_read = fread(new_buf, sizeof(short int), nvalues, fp);
+    if (nvalues_read > 0) {
+      fprintf(stdout, "num_values_read = %ld\n", nvalues_read);
+      for (long i = 0; i < nvalues_read; i++) {
+	fprintf(stdout, "%ld: value = [%d]\n", i, new_buf[i]);
+      }
+    }
+  }
+
+  if (is_stdin == false) {
+    fclose(fp);
+  }
 }
