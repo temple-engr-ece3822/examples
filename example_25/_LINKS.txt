@@ -1,0 +1,22 @@
+Javascript:
+http://www.tutorialspoint.com/javascript/javascript_syntax.htm
+
+XML:
+http://www.w3schools.com/xml/
+
+PHP Tutorial:
+http://www.w3schools.com/php/php_examples.asp
+
+PHP and Mysql Tutorial:
+http://www.w3schools.com/php/php_examples.asp
+
+PHP and Mongo Tutorial:
+http://php.net/manual/en/mongo.tutorial.php
+
+Ruby on Rails:
+http://rubyonrails.org/
+http://www.tutorialspoint.com/ruby-on-rails/rails-examples.htm
+
+Ajax:
+http://www.w3schools.com/Ajax/ajax_intro.asp
+http://www.w3schools.com/ajax/ajax_examples.asp

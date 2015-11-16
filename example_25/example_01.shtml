@@ -1,0 +1,150 @@
+<html>
+<head>
+
+<title>
+Aurora Evaluations
+</title>
+
+<meta name="description" content="Public Domain Large Vocabulary
+Continuous Speech Recognition Software">
+
+<meta name="keywords" content="Automatic Speech Recognition,
+Public Domain Software, Signal Processing">
+
+</head>
+
+<body bgcolor="#FCFCFC" link="#336699" vlink="#555555"
+alink="#000088">
+
+<map name="title">
+
+<area shape="rect" coords="0,1,95,100"
+href="./html/overview.shtml " target="_top"
+alt="Overview" title="Overview">
+
+<area shape="rect" coords="96,1,213,100"
+href="./html/downloads.shtml" target="_top"
+alt="Downloads" title="Downloads">
+
+<area shape="rect" coords="214,1,340,100"
+href="./html/publications.shtml" target="_top"
+alt=" Publications " title=" Publications ">
+
+<area shape="rect" coords="341,1,475,100"
+href="./performance/index.shtml" target="_top"
+alt="Performance" title="Performance">
+
+<area shape="rect" coords="476,1,650,100"
+href="./html/collaborations.shtml"
+target="_top" alt="Collaboration" title="Collaboration">
+
+<area shape="default" nohref>
+
+</map>
+
+<center>
+<a href="./index.shtml">
+<img src="./images/aurora_eval_top.jpg"  border="0" alt="Aurora Evaluations"></a><br>
+<img src="./images/buttons_home.jpg" usemap="#title" border="0" alt="Home Buttons">
+</center>
+
+<br>
+
+<center>
+<table width="700">
+
+<tr>
+<td width="345" valign="top">
+
+<font face="helvetica">
+
+
+<b>Mission</b>:
+<br><br>
+
+<div align="justify">
+Our goal is to evaluate and compare the robustness of feature extraction algorithms in the presence of background noise. These evaluations are being conducted under the
+
+<a href="http://www.etsi.org/t_news/0009_dsr.htm">
+Aurora Distributed Speech Recognition </a>
+
+working group of 
+
+<a href="http://www.etsi.org/">
+The European Telecommunications Standards Institute</a> (ETSI).
+</div>
+
+
+<br>
+<a href="./html/overview.shtml">
+<img src="images/dsr_2.jpg" alt="DSR Overview" align="center" border=0>
+</a>
+</td>
+
+<td width="10" valign="top">&nbsp</td>
+
+<td width="345" valign="top">
+
+<font face="helvetica">
+
+<a href="./html/whats_new.shtml">
+<b>What's New</b></a>:
+
+<br><br>
+
+<ul>
+  <li> (11/12/01)
+       <a href="./downloads/releases/asr_wsj_tutorial_v1.4.3.tar.gz">
+       Multiple-CPU Eval Package (v1.4.3)</a>:
+       Added a utility to remove silence. Fixed a
+       minor bug in the command line interface for lm_scale.
+
+       <font size="-5"><br><br></font>
+       
+  <li> (10/31/01)
+       <a href="./downloads/lists/wsj_short_v1.4.1.tar.gz">
+       Short Training Set Definition (v1.4.1)</a>:
+       
+       We have included file lists that define the two
+       7,138 utterance training sets.
+</ul>
+
+<a href="./html/overview.shtml">
+<b>Overview</b></a>:
+
+Review the status of the Aurora evaluations, and learn more about
+the history of this project.
+
+<br><br>
+
+<a href="./html/downloads.shtml">
+<b>Downloads</b></a>:
+
+Download the latest versions of our recognition software
+and evaluation scripts.
+
+<br><br>
+
+<a href="./html/publications.shtml">
+<b>Publications</b></a>:
+
+Access background information
+related to this project.
+
+<!-- View our -->
+<!-- <a href=./data/mailing_lists/aurora_lvcsr/current/index.shtml"> -->
+<!-- mailing list archive</a>. -->
+
+<br><br>
+
+<a href="./performance/index.shtml"> 
+<b>Performance</b></a>:
+
+A quick look at the overall performance of the baseline
+system using a variety of robust front ends.
+</td>
+</tr>
+</table>
+
+<font face="helvetica">
+<!--#include virtual="/templates/general/footer/footer.shtml" -->

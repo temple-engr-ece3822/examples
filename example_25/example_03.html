@@ -1,0 +1,59 @@
+<!-- file: ./templates/presentation/body/header.html			-->
+
+<!-- this server side include defines a header for the body page        -->
+<!-- of a standard presentation. 					-->
+
+<!-- preliminaries needed to begin a web page                           -->
+
+<html>
+<head>
+
+<!-- display the title using isip_window_title				--> 
+
+<title>
+<?php echo "$isip_title_window"; ?>
+</title>
+</head>
+
+<!-- set the background page color to white				-->
+
+<body bgcolor="#FFFFFF" link="#336699" vlink="#555555" alink="#000088">
+
+<!-- branch on machine for font, unix needs bigger fonts than windows	-->
+
+<!--#if expr="$HTTP_USER_AGENT = /X11.*SunOS/" -->
+<basefont face="times" size="5">
+<!--#else -->
+<!--#if expr="$HTTP_USER_AGENT = /WebCapture/" -->
+<basefont face="times" size="3">
+<!--#else -->
+<basefont face="times" size="5">
+<!--#endif -->
+<!--#endif -->
+
+<!-- display the page title						--> 
+
+<!--#if expr="$HTTP_USER_AGENT = /WebCapture/" -->
+<?php $code_start="<table cellpadding=10 border=2><td bgcolor=#eeeeee><font size=+0><b><pre> "; ?>
+<?php $code_start_right="<table cellpadding=10 align=right border=5><td bgcolor=#eeeeee><font size=+0><b><pre> "; ?>
+<?php $code_start_left="<table cellpadding=10 align=left border=5><td bgcolor=#eeeeee><font size=+0><b><pre> "; ?>
+<?php $code_start_center="<table cellpadding=10 cellspacing=0 bgcolor=#eeeeee align=center border=0><td><font size=+1><b><pre> "; ?>
+<!--#else --> 
+<?php $code_start="<table cellpadding=10 border=2><td bgcolor=#eeeeee><font size=+2><b><pre> "; ?>
+<?php $code_start_right="<table cellpadding=10 align=right border=5><td bgcolor=#eeeeee><font size=+2><b><pre> "; ?>
+<?php $code_start_left="<table cellpadding=10 align=left border=5><td bgcolor=#eeeeee><font size=+2><b><pre> "; ?>
+<?php $code_start_center="<table cellpadding=10 cellspacing=0 bgcolor=#eeeeee align=center border=2><td><font size=+2><b><pre> "; ?>
+
+<!--#endif -->
+
+<?php $code_term="</pre></td></b></font></table> "; ?>
+
+<center>
+<b>
+<font color="#000000" size="+1">
+<?php echo "$isip_title_page"; ?>
+</font>
+</b>
+</center>
+
+<!-- end file: ./templates/presentation/body/header.html			-->
