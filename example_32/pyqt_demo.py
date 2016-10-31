@@ -45,6 +45,7 @@ if __name__ == '__main__':
     #Create and display the form 
     screen = Form()
     screen.show()
+    
     #Exit
     sys.exit(app.exec_())
 

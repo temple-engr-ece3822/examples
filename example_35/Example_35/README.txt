@@ -1,3 +1,11 @@
+Remainder of things to show: 
+	Intellisense
+	Find Reference
+	Navigate to Definition
+	Profiling (?)
+	Source Level Debugging
+	Interperter Modification
+
 This is a very simple Python Example Solution for Visual Studio
 
 I am using Python Tools in Visual Studio, good tutorial on how to get this setup can be found here

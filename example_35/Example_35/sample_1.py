@@ -8,10 +8,10 @@ char_end = 1
 string = sys.stdin.read() #use standard input to allow more than 1 line
 
 if len(sys.argv) > 1: #checks for command line arguments
-    delay = float( sys.argv[1] ) #uses argument as delay time
+    delay = float( 0.5 ) #uses argument as delay time
 
 else:
-    delay = 0.05
+    delay = 0.5
 
 strlength = len(string)+1
 

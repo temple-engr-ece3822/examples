@@ -1,33 +1,31 @@
-
 #A Bunch of Imports
 from mpl_toolkits.mplot3d import axes3d
 from matplotlib import cm
-from matplotlib.ticker import LinearLocator, FormatStrFormatter
+from matplotlib.ticker import LinearLocator
 import matplotlib.pyplot as plt
 import numpy as np
-import csv
 import pandas as pd 
 
 def main():
     ##Function to show some basic plotting functions
     ##Uncomment to use
-    #simple_plot()
+    simple_plot()
     
     ##Function to show simple sinusid with a spines
     ##Uncomment to use
-    #spine_placement_example()
+    spine_placement_example()
     
     ##Functin to show a simple wireframe example
     ##Uncomment to use
-    #wireframe_example()
+    wireframe_example()
     
     ##Function to show a 3d surface plot
     ##Uncomment to use
-    #surface_example()
+    surface_example()
     
     ##Functin to show a filled contour map
     ##Uncomment to use
-    #contour_example()
+    contour_example()
     
     ##Function to generate data into a CSV file and then plot data
     ##Uncomment to use
@@ -46,7 +44,7 @@ def simple_plot():
     x = np.arange(len(y))
     
     # plot with various axes scales
-    plt.figure(1)
+    plt.figure()
     
     # linear
     plt.subplot(221) #Create Subplot Right
@@ -66,7 +64,7 @@ def simple_plot():
     plt.show() #Show Figure
     
     # plot with variious lines 
-    plt.figure(2)
+    plt.figure()
     # evenly sampled time at 200ms intervals
     t = np.arange(0., 5., 0.2)
     
@@ -108,6 +106,7 @@ def spine_placement_example():
     ax.set_xlim(-2*np.pi, 2*np.pi)
     #Set x-axis tick value to count by pi/2
     xticker = np.arange(-np.pi-np.pi/2, np.pi+np.pi, np.pi/2)
+    #Check out the inline R, isn't that fun.
     xlabels = [r"$\frac{-3\pi}{2}$", r"${-\pi}$",r"$\frac{-\pi}{2}$","",r"$\frac{pi}{2}$",r"${\pi}$",r"$\frac{3\pi}{2}$"]
     #Print labels for x-axis
     ax.set_xticks(xticker)
@@ -211,21 +210,25 @@ def plot_from_file(filename):
     data['Age'].fillna(data['Age'].median(), inplace=True)
     #Plot some informatin on survival rates based on age using a histogram
     figure = plt.figure(figsize=(10,5))
-    plt.hist([data[data['Survived']==1]['Age'],data[data['Survived']==0]['Age']], stacked=True, color = ['g','r'],bins = 30,label = ['Survived','Dead'])
+    #Isn't this one-liner wonderful, does all the data manipulation and plotting
+    plt.hist([data[data['Survived']==1]['Age'],data[data['Survived']==0]['Age']], 
+             stacked=True, color = ['g','r'],bins = 30,label = ['Survived','Dead'])
     #Apply the labels
     plt.xlabel('Age')
     plt.ylabel('Number of passengers')
     plt.legend()
+    plt.show()
     
     #Plot some intresting information about passengers verus. fare. 
     figure = plt.figure(figsize=(10,5))
     #Create the histogram
-    plt.hist([data[data['Survived']==1]['Fare'],data[data['Survived']==0]['Fare']], stacked=True, color = ['g','r'],
-             bins = 30,label = ['Survived','Dead'])
+    plt.hist([data[data['Survived']==1]['Fare'],data[data['Survived']==0]['Fare']],
+             stacked=True, color = ['g','r'],bins = 30,label = ['Survived','Dead'])
     #Apply the labels
     plt.xlabel('Fare')
     plt.ylabel('Number of passengers')
     plt.legend()
+    plt.show()
 
 #Guard the main functino call
 if __name__ == '__main__':
